@@ -1,6 +1,6 @@
-provider "digital_ocean" {
-  token = var.digitalocean_token
-  spaces_access_id = var.digitalocean_spaces_id
+provider "digitalocean" {
+  token             = var.digitalocean_token
+  spaces_access_id  = var.digitalocean_spaces_id
   spaces_secret_key = var.digitalocean_spaces_key
 }
 
