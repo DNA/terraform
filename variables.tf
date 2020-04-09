@@ -1,3 +1,5 @@
+variable "terraform_user" {}
+
 variable "digitalocean_token" {}
 
 variable "digitalocean_spaces_id" {}
