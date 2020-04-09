@@ -9,7 +9,7 @@ data "tfe_workspace" "hub-prod" {
 
 resource "tfe_variable" "digitalocean_token" {
   key          = "digitalocean_token"
-  value        = ""
+  value        = var.digitalocean_token
   category     = "terraform"
   workspace_id = data.tfe_workspace.hub-prod.id
   sensitive    = true
@@ -18,7 +18,7 @@ resource "tfe_variable" "digitalocean_token" {
 
 resource "tfe_variable" "digitalocean_spaces_id" {
   key          = "digitalocean_spaces_id"
-  value        = ""
+  value        = var.digitalocean_spaces_id
   category     = "terraform"
   workspace_id = data.tfe_workspace.hub-prod.id
   sensitive    = true
@@ -27,7 +27,7 @@ resource "tfe_variable" "digitalocean_spaces_id" {
 
 resource "tfe_variable" "digitalocean_spaces_key" {
   key          = "digitalocean_spaces_key"
-  value        = ""
+  value        = var.digitalocean_spaces_key
   category     = "terraform"
   workspace_id = data.tfe_workspace.hub-prod.id
   sensitive    = true
