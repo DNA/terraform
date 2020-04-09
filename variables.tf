@@ -1,4 +1,4 @@
-variable "terraform_user" {}
+variable "terraform_user_token" {}
 
 variable "digitalocean_token" {}
 
